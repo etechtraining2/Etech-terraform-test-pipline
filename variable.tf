@@ -1,6 +1,6 @@
 # VPC Variables
 variable "region" {
-  default       = "us-east-1"
+  default       = "us-west-2"
   description   = "AWS Region"
   type          = string
 }
