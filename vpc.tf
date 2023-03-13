@@ -16,7 +16,7 @@ resource "aws_internet_gateway" "internet-gateway" {
   vpc_id    = aws_vpc.vpc.id
 
   tags      = {
-    Name    = "Test IGW"
+    Name    = "Test4 IGW"
   }
 }
 
