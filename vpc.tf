@@ -6,7 +6,9 @@ resource "aws_vpc" "vpc" {
   enable_dns_hostnames    = true
 
   tags      = {
-    Name    = "test VPC"
+    Name    = "team5 VPC"
+    Environment = "sandbox"
+    Owner = "Etechdevops"
   }
 }
 
@@ -124,5 +126,14 @@ resource "aws_subnet" "private-subnet-4" {
 
   tags      = {
     Name    = "Private Subnet 4 | Database Tier"
+  }
+}
+
+resource "aws_instance" "web" {
+  ami           = "ami-0507f77897697c4ba"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "HelloWorld"
   }
 }
