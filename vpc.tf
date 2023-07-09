@@ -131,7 +131,7 @@ resource "aws_subnet" "private-subnet-4" {
 
 resource "aws_instance" "web" {
   ami           = "ami-0507f77897697c4ba"
-  instance_type = "t2.micro"
+  instance_type = "t2.medium"
 
   tags = {
     Name = "HelloWorld"
