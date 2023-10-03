@@ -7,7 +7,8 @@ resource "aws_vpc" "vpc" {
 
   tags = {
     Name        = "etech-stage VPC"
-    Environment = "stagging"
+
+    Environment = "staging"
     Owner       = "Etechdevops"
   }
 }
