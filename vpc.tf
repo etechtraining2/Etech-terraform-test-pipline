@@ -6,10 +6,10 @@ resource "aws_vpc" "vpc" {
   enable_dns_hostnames = true
 
   tags = {
-    Name        = "team7-stage VPC"
-    Environment = "stage"
+    Name        = "team9-Dev VPC"
+    Environment = "Dev"
     Owner       = "Etechdevops"
-    Team        = "team7"
+    Team        = "team9"
   }
 }
 
